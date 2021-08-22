@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import Main from "../layouts/Main";
 import styles from "../styles/modules/Home.module.scss";
 import {Container, Grid, Button, Box} from "@material-ui/core";
-import Image from "next/image";
 import CallButton from "../components/Elements/Buttons/CallButton";
+import MainSmartImage from "../components/Elements/MainSmartImage";
 
 export default function Home() {
     const firstSection = (
@@ -13,7 +13,6 @@ export default function Home() {
                     <Grid
                         container
                         direction="row"
-                        justifyContent="center"
                         alignItems="center"
                     >
                         <Grid item md={7} sm={12}>
@@ -30,6 +29,9 @@ export default function Home() {
                             </Box>
 
                             <CallButton />
+                        </Grid>
+                        <Grid  item md={5} sm={12}>
+                            <MainSmartImage/>
                         </Grid>
                     </Grid>
                 </Container>
