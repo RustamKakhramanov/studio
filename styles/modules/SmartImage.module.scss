@@ -1,6 +1,43 @@
 .smartContent {
   position: relative;
+  min-height: 678px;
   .lottie {
     position: absolute;
+  }
+  .lottieBg {
+    position: absolute;
+    width: 122.34%;
+    height: 72.45%;
+  }
+  .lottiePhone {
+    position: relative;
+    left: 34px;
+    top: -55px;
+  }
+}
+
+@media (max-width: 1198px) {
+  .smartContent {
+   display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .smartContent {
+    .lottie {
+      position: initial;
+      margin-bottom: -90px;
+    }
+  }
+
+}
+@media (min-width: 960px) {
+  .smartContent{
+    padding-top: 45px;
+    .lottieBg {
+      left: -45px;
+      z-index: 0;
+    }
   }
 }

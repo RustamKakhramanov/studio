@@ -8,7 +8,7 @@ export default function Main(props : Props<any>) {
     } = props;
 
     return (
-        <div>
+        <div id='main' className='root-box'>
             <Navbar/>
                 <div>
                     {children}

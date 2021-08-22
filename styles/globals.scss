@@ -19,8 +19,20 @@ a {
 .layout-content, .main-section {
   padding-top: 80px;
 }
+.main-section {
+}
 
 .bold-offer-items {
   font-size: 20px;
   font-weight: bold;
+}
+.root-box {
+  overflow-x: hidden;
+
+}
+@media (max-width: 991px) {
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }

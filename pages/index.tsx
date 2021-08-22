@@ -4,8 +4,31 @@ import styles from "../styles/modules/Home.module.scss";
 import {Container, Grid, Button, Box} from "@material-ui/core";
 import CallButton from "../components/Elements/Buttons/CallButton";
 import MainSmartImage from "../components/Elements/MainSmartImage";
+import {makeStyles} from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles(theme => ({
+    gridRelative: {
+        zIndex: 1,
+        position: 'relative',
+
+    },
+    gridRow: {
+        [theme.breakpoints.up('xs')]: {
+            flexDirection: 'column-reverse',
+        },
+        [theme.breakpoints.up('sm')]: {
+            flexDirection: 'column-reverse',
+        },
+        [theme.breakpoints.up('md')]: {
+            flexDirection: 'row',
+        },
+    }
+}));
 
 export default function Home() {
+    const mainStyles = useStyles();
+
     const firstSection = (
         <div>
             <div className={styles.firstSection + ' main-section'}>
@@ -13,9 +36,11 @@ export default function Home() {
                     <Grid
                         container
                         direction="row"
+                        justifyContent="center"
                         alignItems="center"
+                        className={mainStyles.gridRow}
                     >
-                        <Grid item md={7} sm={12}>
+                        <Grid item md={6} sm={12} xs={12} className={mainStyles.gridRelative}>
                             <Box>
                                 <h1 className={styles.title}>
                                     <span className={styles.company}>Useful Target.</span>
@@ -30,14 +55,15 @@ export default function Home() {
 
                             <CallButton />
                         </Grid>
-                        <Grid  item md={5} sm={12}>
-                            <MainSmartImage/>
+                        <Grid  item md={5} xs={8} sm={5} >
+                            <Box display={{ xs: 'none', md: 'block' }}>
+                                <MainSmartImage/>
+                            </Box>
                         </Grid>
                     </Grid>
                 </Container>
             </div>
         </div>
-
     );
 
     return (
