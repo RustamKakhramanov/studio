@@ -3,3 +3,18 @@
     @content;
   }
 }
+
+@mixin bacgroundSection() {
+  background-size: cover;
+  background-position: center top;
+}
+@mixin noSpaces() {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

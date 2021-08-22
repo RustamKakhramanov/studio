@@ -1,0 +1,14 @@
+@import "../variables/mixins";
+
+.callButton {
+  background: #305FF3;
+  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4);
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.default {
+  display: flex;
+  justify-content: center;
+}

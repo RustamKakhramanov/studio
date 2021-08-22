@@ -29,7 +29,6 @@ export default function Navbar(...props) {
                             direction="row"
                             justifyContent="space-between"
                             alignItems="center"
-
                         >
 
                             <Grid item md={2} sm={12}>

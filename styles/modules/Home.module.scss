@@ -1,0 +1,63 @@
+@import "../variables.scss";
+@import "../variables/mixins";
+
+$main-path: $home-path + '/main/';
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.firstSection {
+  padding-top: 80px;
+  background-image: url($main-path + 'bg.svg');
+  min-height: 880px;
+  display: flex;
+  align-items: center;
+  @include bacgroundSection;
+  .title {
+    .company {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      @include noSpaces;
+    }
+    .offer {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 65px;
+      display: flex;
+      align-items: center;
+      color: $main-text-color;
+      margin: 22px 0 26px;
+    }
+  }
+  .needText {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $main-text-color;
+    max-width: 353px;
+    @include noSpaces;
+
+  }
+}
+
+.firstSectionTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
