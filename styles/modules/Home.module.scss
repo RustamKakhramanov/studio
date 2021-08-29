@@ -1,5 +1,5 @@
 @import "../variables.scss";
-@import "../variables/mixins";
+@import "../mixins";
 
 $main-path: $home-path + '/main/';
 .main {
@@ -47,6 +47,10 @@ $main-path: $home-path + '/main/';
     @include noSpaces;
 
   }
+}
+
+.secondSection {
+
 }
 
 .firstSectionTitle {
