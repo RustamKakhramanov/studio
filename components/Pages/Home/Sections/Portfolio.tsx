@@ -9,20 +9,6 @@ import {CallButton} from "../../../Elements/Buttons";
 
 const portfolioList = CONTENT.portfolio;
 
-const renderItem = (element, key) => {
-
-    return (
-        <div className={styles.item} key={key} style={{backgroundImage: 'url(' + element.image + ')'}}>
-            <Link href={'#'}>
-                <div className={element.textColor ? styles.content + ' ' + element.textColor : styles.content}>
-                    <h4 className={styles.title}>{element.title}</h4>
-                    <h5 className={styles.subtitle}>{element.subTitle}</h5>
-                </div>
-            </Link>
-        </div>
-    )
-}
-
 const Portfolio = () => {
     return (
         <div className={styles.portfolioSection + ' ' + 'section'}>

@@ -59,6 +59,42 @@ $main-path: $home-path + '/main/';
   font-size: 36px;
   line-height: 44px;
 }
+
+.guarantee {
+  padding: 120px 0 100px;
+  .list{
+    .item {
+      margin-top: 50px;
+      .content {
+        position: relative;
+        padding-bottom: 1px;
+        min-height: 155px;
+        .title {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 39px;
+          color: #252525;
+        }
+        .text {
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #252525;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 70%;
+          border-bottom: 1px solid #E6E6E6;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

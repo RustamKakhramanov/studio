@@ -12,18 +12,18 @@ const Offer = () => {
     return (
         <div className={/*styles.secondSection + '' + */'section'}>
             <Container>
-                    <Box>
-                        <PreTitle>
-                            ЧЕМ МЫ МОЖЕМ ПОМОЧЬ
-                        </PreTitle>
+                <Box>
+                    <PreTitle>
+                        ЧЕМ МЫ МОЖЕМ ПОМОЧЬ
+                    </PreTitle>
 
-                        <SectionTitle>
-                            Наша студия поможет Вам разобраться, <b>продвинуть</b> Ваш бизнес,
-                            <b> привлечь новых
-                                и укрепить доверие имеющихся клиентов.</b>
-                        </SectionTitle>
-                        <DescriptionCardsList elements={offerList}/>
-                    </Box>
+                    <SectionTitle>
+                        Наша студия поможет Вам разобраться, <b>продвинуть</b> Ваш бизнес,
+                        <b> привлечь новых
+                            и укрепить доверие имеющихся клиентов.</b>
+                    </SectionTitle>
+                    <DescriptionCardsList elements={offerList}/>
+                </Box>
             </Container>
         </div>
     );
