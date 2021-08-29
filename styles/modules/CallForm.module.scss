@@ -1,0 +1,41 @@
+.callForm {
+  width: 100%;
+  max-width: 410px;
+  .container {
+    margin-top: 70px;
+    .item {
+      margin-top: 20px;
+      height: 97px;
+      .field {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #FFFFFF;
+        background: transparent;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      .button {
+        background: #FFFFFF;
+        color: #131313;
+        width: 100%;
+        height: 100%;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        &:hover {
+          background: #d0d9ff;
+        }
+      }
+    }
+  }
+  .error {
+    margin: 10px 0;
+    font-size: 16px;
+    color: red;
+  }
+}

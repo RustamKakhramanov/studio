@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/modules/Navbar.module.scss' ;
 import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
+import {CONTACT} from "../../configs";
 
 export default function Navbar(...props) {
     const sections = [
@@ -54,9 +55,9 @@ export default function Navbar(...props) {
                                 </nav>
                             </Grid>
                             <Grid item md={2}>
-                                <a href="tel:87713602692" className={styles.number}>
+                                <a href={"tel:" + CONTACT.phone} className={styles.number}>
                                     <LocalPhoneIcon  style={{ marginRight: 7 }}/>
-                                    <span>+7 771 360 2692</span>
+                                    <span>{CONTACT.phone}</span>
                                 </a>
                             </Grid>
                         </Grid>
